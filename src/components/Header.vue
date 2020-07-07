@@ -1,21 +1,28 @@
 <template>
-  <div class="header container">
-    <h1 class="title">Our Pricing</h1>
-    <div class="toggleWrapper">
-      <p class="annually">Annually</p>
-      <!-- Toggle Button -->
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <p class="monthly">Monthly</p>
+  <div class="header">
+    <div class="header-content container">
+      <h1 class="title">Our Pricing</h1>
+      <div class="toggleWrapper">
+        <p class="annually">Annually</p>
+        <!-- Toggle Button -->
+        <label class="switch">
+          <input @change="handleToggle" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p class="monthly">Monthly</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  methods: {
+    handleToggle: () => {
+      console.log("toggled!");
+    }
+  }
 };
 </script>
 
@@ -23,6 +30,7 @@ export default {
 .header {
   z-index: 1;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .title {
@@ -84,7 +92,11 @@ export default {
 }
 
 input:checked + .slider {
-  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: linear-gradient(
+    0.25turn,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
 }
 
 input:focus + .slider {

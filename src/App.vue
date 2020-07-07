@@ -2,17 +2,20 @@
   <div id="app">
     <img src="@/assets/images/bg-top.svg" class="bg-top" />
     <Header />
+    <Cards />
     <img src="@/assets/images/bg-bottom.svg" class="bg-bottom" />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
+import Cards from "@/components/Cards.vue";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    Cards
   }
 };
 </script>
@@ -30,6 +33,7 @@ img {
 
 #app {
   position: relative;
+  padding: 5rem 0;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -41,7 +45,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 

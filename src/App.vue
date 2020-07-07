@@ -37,7 +37,7 @@ img {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  background-image: linear-gradient(#f7f7ff, #f6f6ff);
+  background-color: #cbf0f9;
   display: flex;
   flex-direction: column;
   justify-content: center;

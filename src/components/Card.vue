@@ -5,8 +5,8 @@
       <h1 class="price" :class="{ middlePrice: pricing.id === 2 }">{{pricing.price}}</h1>
       <hr />
       <div v-for="features in pricing.features" :key="pricing.id">
-        <p class="feature">{{features}}</p>
-        <hr />
+        <p class="feature" :class="{ middleFeature: pricing.id === 2 }">{{features}}</p>
+        <hr :class="{ middleLine: pricing.id === 2 }" />
       </div>
       <button class="btn" :class="{ middleBtn: pricing.id === 2 }">Learn More</button>
     </div>
@@ -26,7 +26,7 @@ export default {
 <style scoped>
 .card {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   width: 100%;
   background-color: #fff;
   border-radius: 0.6rem;
@@ -45,7 +45,7 @@ export default {
 
 .title {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -64,11 +64,21 @@ export default {
 }
 
 hr {
-  border: 1px solid hsl(233, 13%, 49%);
+  border-color: hsl(240, 78%, 98%);
+}
+
+.middleLine {
+  border-color: #fff;
 }
 
 .feature {
+  color: hsl(233, 13%, 49%);
+  font-weight: 700;
   margin: 1.2rem 0;
+}
+
+.middleFeature {
+  color: #fff;
 }
 
 .btn {

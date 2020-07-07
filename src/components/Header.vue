@@ -59,6 +59,10 @@ export default {
   margin: 0 2rem;
 }
 
+.switch:hover {
+  opacity: 0.7;
+}
+
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
@@ -74,6 +78,11 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  background-image: linear-gradient(
+    0.75turn,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;

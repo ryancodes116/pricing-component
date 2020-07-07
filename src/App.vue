@@ -65,6 +65,10 @@ img {
 
 /* Media Queries */
 @media (min-width: 990px) {
+  #app {
+    padding: 0.8rem 0;
+  }
+
   .bg-top {
     top: 0;
     right: 0;

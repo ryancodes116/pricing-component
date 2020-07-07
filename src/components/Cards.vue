@@ -24,4 +24,13 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
+/* Media Queries */
+@media (min-width: 990px) {
+  .cards {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 </style>

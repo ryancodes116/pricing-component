@@ -96,13 +96,30 @@ hr {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
 .middleBtn {
   color: hsl(237, 63%, 64%);
   background-image: none;
   background-color: #fff;
 }
 
-.btn:hover {
-  opacity: 0.9;
+.middleBtn:hover {
+  background-image: none;
+  background-color: hsl(237, 63%, 64%);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (min-width: 990px) {
+  .middleCard {
+    padding: 4rem 0;
+  }
 }
 </style>
